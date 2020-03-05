@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            border-radius: 50%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function generate(){
+            var sizes = [10, 50, 100];
+            var colors = ['green', 'yeallow', 'red', 'blue', 'black', 'pink'];
+            for (let i=0; i<300; i++){
+                let size = sizes[Math.floor(Math.random() * 3)];
+                console.log(size)
+                let color = colors[Math.floor(Math.random() * 6)];
+                console.log(color)
+                let position = Math.floor(Math.random() * 96);
+                console.log(position)
+                let circle = document.createElement('div');
+                circle.style.width = `${size}px`; circle.style.height = `${size}px`;
+                circle.style.backgroundColor = color;
+                circle.style.left = `${Math.floor(Math.random() * 96)}%`;
+                circle.style.top = `${Math.floor(Math.random() * 96)}%`;
+                console.log(circle)
+                document.getElementsByTagName('body')[0].appendChild(circle);
+            }
+        }
+        generate();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+# to define period of time
+set @from = '2019-02-03'
+set @to = '2019-12-09'
+
+#1
+SELECT room.id, sum(DATEDIFF(Reservation.EndsAt,Reservation.StartsAt)) AS time_hours
+    FROM Reservation left join Room 
+    ON Room.Id = Reservation.RoomId 
+    WHERE (Reservation.EndsAt <= Convert(datetime, @to) AND Reservation.StartsAt >= Convert(datetime, @from))
+    GROUP BY room.id;
+
+#2
+SELECT room.id, sum(DATEDIFF(hour, Reservation.EndsAt,Reservation.StartsAt)*Room.PricePerHour) AS cost
+    FROM Reservation left join Room 
+    ON Room.Id = Reservation.RoomId 
+    WHERE (Reservation.EndsAt <= Convert(datetime, @to) AND Reservation.StartsAt >= Convert(datetime, @from))
+    GROUP BY room.id;
+
+
+#3
+CREATE VIEW URR_from_to as SELECT User.Id, Room.Id, count(Room.Id) as Ilosc FROM Reservation JOIN User JOIN Room 
+    WHERE (Reservation.UserId = User.Id AND Reservation.RoomId = Room.Id AND Reservation.EndsAt <= Convert(datetime, @to) AND Reservation.StartsAt >= Convert(datetime, @from))
+    GROUP BY Room.Id;
+
+SELECT User.Id, Room.Id FROM URR_from_to as A WHERE A.Ilosc >= ALL(
+    SELECT Ilosc from URR_from_to WHERE Room.Id = A.Room.Id AND User.Id = A.User.Id)
+
+
+#4
+CREATE VIEW RDate_from_to as SELECT User.Id, Room.Id, sum(DATEDIFF(hour, Reservation.EndsAt, Reservation.StartsAt))) as Time FROM Reservation JOIN User JOIN Room 
+    WHERE (Reservation.UserId = User.Id AND Reservation.RoomId = Room.Id AND Reservation.EndsAt <= Convert(datetime, @to) AND Reservation.StartsAt >= Convert(datetime, @from))
+    GROUP BY Room.Id)
+
+SELECT User.Id, Room.Id FROM RDate_from_to as A WHERE A.Time >= ALL(
+    SELECT Time from RDate_from_to WHERE Room.Id = A.Room.Id AND User.Id = A.User.Id)

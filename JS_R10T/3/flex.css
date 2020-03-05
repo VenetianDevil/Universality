@@ -1,0 +1,19 @@
+body {
+    height: 500px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+div {
+    height: 50%;
+    flex-flow: row;
+}
+#dark_gray,
+#gray {
+    width: 50%;
+}
+#red {
+    width: 100%;
+}
