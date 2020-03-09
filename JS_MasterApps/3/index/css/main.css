@@ -1,0 +1,29 @@
+.car {
+    position: fixed;
+    background-image: url(../img/car.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 351px;
+    margin: 287px 263px;
+}
+
+.tree-container {
+    position: absolute;
+    background-image: url(../img/tree.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 971px;
+    height: 186px;
+    margin: 183px 0;
+}
+
+.tree {
+    background-image: url(../img/cat.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 199px;
+    height: 186px;
+    margin: 8px 194px;
+    transform: rotate(21deg);
+}
