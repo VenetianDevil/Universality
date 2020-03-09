@@ -7,9 +7,10 @@ Link do profilu: *https://universality.io/students/5dfa3edd97865f00dc055d1b?loca
 ## Ścieżki firm:
 * [R10T](#r10T)
 * [HCL](#hCL)
+* [Master App](#master-app)
 
 ## R10T
-* JS / React -> kompetencje:
+* JS / React.js / HTML / CSS -> kompetencje:
     * React.js > Import, export components
     * React.js > Passins Props to components
     * React.js > Lifecycles methods
@@ -19,10 +20,13 @@ Link do profilu: *https://universality.io/students/5dfa3edd97865f00dc055d1b?loca
     * HTML & CSS > CSS flex, float, grid
 
 ## HCL
-* Python -> kompetencje:
+* Python / SQL / GIT -> kompetencje:
     * Python > Classes, Objects
     * Python > Exceptions
     * Python > Regular expressions
     * Python > Lists, Generators and Decorators
     * Python > Loops
     * DevOps > Version Control > Git# Universality
+
+## Master App
+* JavaScript / HTML / CSS -> kompetencje:
