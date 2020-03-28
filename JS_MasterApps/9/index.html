@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1
+        let users = [{
+            firstname: "Jan",
+            lastname: "Kowalski",
+            gender: "male",
+            age: 17,
+        },
+        {
+            firstname: "Anna",
+            lastname: "Nowal",
+            gender: "female",
+            age: 23,
+        },
+        {
+            firstname: "Krzysztof",
+            lastname: "Zapalski",
+            gender: "male",
+            age: 31,
+        },
+        {
+            firstname: "Marta",
+            lastname: "Wisniewska",
+            gender: "female",
+            age: 15,
+        },
+        {
+            firstname: "Szymon",
+            lastname: "Kowalski",
+            gender: "male",
+            age: 70,
+        }]
+
+        // 2 a
+        users[1].age = 88;
+
+        // 2 b
+        users.map(user => {
+            user.student = true;
+            return user;
+        })
+
+        // 2 c
+        console.log(users.filter(user => { if (user.gender == 'female') return user; }))
+    </script>
+</body>
+
+</html>

@@ -30,3 +30,19 @@ Link do profilu: *https://universality.io/students/5dfa3edd97865f00dc055d1b?loca
 
 ## Master App
 * JavaScript / HTML / CSS -> kompetencje:
+    * oczekiwanie na sprawdzenie ścieżki:
+        * JavaScript > Loops
+        * JavaScript > Functions
+        * JavaScript > Arrays
+        * JavaScript > Objects
+        * JavaScript > Document Object Model
+        * JavaScript > Events
+        * HTML & CSS > HTML atrybuty
+        * HTML & CSS > HTML tabele
+        * HTML & CSS > HTML formularze
+        * HTML & CSS > CSS selectory
+        * HTML & CSS > CSS box model
+        * HTML & CSS > CSS pozycjonowanie
+        * HTML & CSS > CSS flex, float, grid
+        * HTML & CSS > CSS responsywność
+        * HTML & CSS > Bootstrap

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        const dog = {
+            name: 'Burek',
+            size: 12,
+            color: 'czarny',
+            giveVoice: function () {
+                console.log('Hau hau')
+            },
+            getDog: function () {
+                return [this.name, this.size, this.color].join(' ');
+            }
+        }
+
+        dog.giveVoice();
+        console.log(dog.getDog());
+    </script>
+
+</body>
+
+</html>
