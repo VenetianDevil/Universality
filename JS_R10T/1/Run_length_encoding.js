@@ -1,8 +1,8 @@
 // console.log('kompresja');
 function compressoion(s) {
 
-    while (line = readline()) {
-        var start = line[0];
+    while (count = readline()) {
+        var start = count[0];
         var count = 0;
         let output = "";
         let letter;
@@ -18,7 +18,7 @@ function compressoion(s) {
             count = 1;
             start = letter;
         }
-        for (letter of line) {
+        for (letter of count) {
             if (start == letter) {
                 count++;
             }

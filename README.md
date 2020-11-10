@@ -7,7 +7,7 @@ Link do profilu: *https://universality.io/students/5dfa3edd97865f00dc055d1b?loca
 ## Ścieżki firm:
 * [R10T](#r10T)
 * [HCL](#hCL)
-* [Master App](#master-app)
+* [Master Apps](#master-apps)
 
 ## R10T
 * JS / React.js / HTML / CSS -> kompetencje:
@@ -28,7 +28,7 @@ Link do profilu: *https://universality.io/students/5dfa3edd97865f00dc055d1b?loca
     * Python > Loops
     * DevOps > Version Control > Git# Universality
 
-## Master App
+## Master Apps
 * JavaScript / HTML / CSS -> kompetencje:
     * oczekiwanie na sprawdzenie ścieżki:
         * JavaScript > Loops
@@ -46,3 +46,13 @@ Link do profilu: *https://universality.io/students/5dfa3edd97865f00dc055d1b?loca
         * HTML & CSS > CSS flex, float, grid
         * HTML & CSS > CSS responsywność
         * HTML & CSS > Bootstrap
+
+## Infosys
+* Python -> kompetencje:
+    * Python > Basics
+    * Python > Functions
+    * Python > Lists, Generators and Decorators
+    * Python > Loops
+    * oczekiwanie na sprawdzenie:
+        * Python > Files
+        * Python > Data visualization
